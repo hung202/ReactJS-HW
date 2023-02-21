@@ -1,0 +1,134 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+.content{
+    padding-top: 85px;
+}
+.head{
+    background-color:#F5F5F5 ;
+    height: 50px;
+    margin-bottom: 5px;
+    
+    
+}
+.head> img{ 
+   /* height: 40%; */
+    width: 20%; 
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+
+}
+.nav{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   background-color: #F5F5F5;
+   margin-bottom: 5px;
+   
+   
+}
+a{
+    font-weight: bold;
+    padding-right: 5px;
+    text-decoration: none;
+    color: #141313;
+    border-right: solid black 1px;
+    margin: 5px;
+    
+}
+a:hover{
+    color:rgb(249, 71, 71);
+}
+.content{
+    display: flex;
+    
+    
+    
+}
+.content > .slide{
+    width: 26%;
+    background-color: #F5F5F5;
+    padding: 5px;
+    
+    
+    
+}
+.slide >.inslide{
+    width: 100%;  
+}
+iframe{
+    width: 98%;
+    height: 200px;
+    margin-top: 10px;
+    
+}
+.t1{
+    float: left;
+}
+.t2{
+    float: left;
+}
+.t3{
+    clear: both;
+}
+.content > .main{
+    width: 74%;
+    background-color: #F5F5F5;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+   
+}
+    
+
+    
+.main > .inslide2{
+    width: 100%;
+}
+.inslide2 > iframe{
+    width: 99%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+
+/* repositive */
+@media only screen and (max-width: 700px) {
+     p{font-size: 15px;}
+     a{font-size: 12px;}
+     
+     .head{   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F5F5;
+        margin-bottom: 5px;}
+    .head> img{ width: 60%;}
+    
+    .content{ 
+        display: flex;
+        flex-flow: column;
+
+    }
+     .main{order: 1;}
+     .slide{order: 2;}
+
+    
+     .content > .slide{
+        width: 100%;
+        background-color: #F5F5F5;
+        margin: 10px;
+    }
+    .content > .main{
+        width: 100%;
+        background-color: #F5F5F5;
+        margin-right: 20px;   
+    }
+    iframe{height: 300px;}
+    .inslide2>iframe{ height: 300px;}
+}
