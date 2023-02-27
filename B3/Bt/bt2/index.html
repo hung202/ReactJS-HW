@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <div class="col-md-12 content">
       <div class="row">
-        <div class="col-md-3" style="height: 780px; background-color: #2f3439;">
+        <div class="col-md-3 " style=" background-color: #2f3439;">
           <div class="border-bottom d-flex p-2 align-items-center">
             <img class="rounded-circle" src="log4.png" alt="" width="35px" height="35px">
             <p class="text-white m-2">Admin</p>
@@ -71,12 +71,12 @@
               
              <div class="accordion accordion-flush mt-1" id="accordionFlushExample">
               <div class="accordion-item" >
-                <h2 class="accordion-header" id="flush-headingOne1">
-                  <button class="accordion-button collapsed" style="background-color: #494E54;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h2 class="accordion-header" id="flush-headingOne2">
+                  <button class="accordion-button collapsed" style="background-color: #494E54;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne">
                     <span class="text-white"><i class="bi bi-person-plus m-2 "></i>Quản lý người dùng </span>
                   </button>
                 </h2>
-                <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body" style="background-color: #2f3439;">
                     <span class="text-white" style=""></span>
                   </div>
@@ -88,7 +88,7 @@
             <div class="col-md-12 p-2" style=" background-color: #eeeeef;">
               <div class="border d-flex p-1 justify-content-between " style="background-color: #ffffff;">
                 <div class=" d-flex align-items-center"> 
-                  <i class="bi bi-x-diamond-fill m-2  text-muted"></i>
+                  <i class="bi bi-menu-button m-2  text-muted"></i>
                   <button class="btn mt-1" type="button">
                     <span class="text-muted" style="float: left;">Trang chủ</span>
                   </button>
@@ -130,16 +130,29 @@
                           <div class="col-12 mb-3 border-bottom">
                               <p class="mt-1">Dữ liệu sản phẩm</p>
                           </div>
-                          <div class="col-12 mb-3">
-                              <label for="" class="form-label fw-bold">Tên sản phẩm (*)</label>
-                              <label for="" class="form-label fw-bold">(VNĐ)</label>
-                              <input type="text" class="form-control " id="">
-                          </div>
-                          <div class="col-12 mb-3">
-                              <label for="" class="form-label fw-bold">Mô tả ngắn (*) </label>
-                              <label for="" class="form-label fw-bold">(VNĐ)</label>
+                          
+                          <div class="col-md-12 mb-3 d-flex">
+                              <div class=" col-md-2">
+                                <p class="fw-bold">Giá bán(*)</p>
+                                <p class="fw-bold">(VNĐ)</p>
+                              </div>
+                              <div class="col-md-10">
                               <input type="text" class="form-control" id="">
+                            </div>
                           </div>
+                          <div class="col-md-12 mb-3 d-flex">
+                            <div class=" col-md-2">
+                              <p class="fw-bold">Giá bán(*)</p>
+                              <p class="fw-bold">(VNĐ)</p>
+                            </div>
+                            <div class="col-md-10">
+                              <select name="cars" id="cars" class="form-select">
+                                <option value="volvo">Mới</option>
+                                <option value="saab">...</option>
+                                
+                              </select>
+                          </div>
+                        </div>
                           
                       </form>
                     </div>
