@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <div class="col-md-12 content">
       <div class="row">
-        <div class="col-md-2 vh-100 offcanvas offcanvas-start"  tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style=" background-color: #2f3439;">
+        <div class="col-md-3  collapse show" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style=" background-color: #2f3439; height: 820px;">
           <div class="border-bottom d-flex p-2 align-items-center">
             <img class="rounded-circle" src="log4.png" alt="" width="35px" height="35px">
             <p class="text-white m-2">Admin</p>
@@ -84,126 +84,121 @@
               </div>
             </div>
             </div>
-            <div class="col-md-12">
-            <div class="col-md-12 p-2" style=" background-color: #eeeeef;">
-              <div class="border d-flex p-1 justify-content-between " style="background-color: #ffffff;">
-                <div class=" d-flex align-items-center"> 
-                  <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <i class="bi bi-menu-button m-2  text-dark" style="font-size: 30px;"></i>
-                  <button class="btn mt-1" type="button">
-                    <span class="text-muted" style="float: left;">Trang chủ</span>
-                  </button>
-                  <button class="btn mt-1" type="button">
-                    <span class="text-muted" style="float: left;"></i>Đăng xuất</span>
-                  </button>
-                </div>
-                <div class=" d-flex align-items-center">
-                  <button class="btn " type="submit">
-                    <i class="bi bi-search text-muted" style="font-size: 20px;"></i>
-                 </button>
-                </div>
-               </div>
-               <div class="d-flex align-items-center justify-content-between">
-                <h2>Thêm mới sản phẩm</h2>
-                <p class="text-primary"> Trang chủ</p>
+           
+        <div class="col row mx-2 p-0 d-flex flex-column justify-content-between vh-100" style="background-color: #eeeeef;">
+          <div class="col-md-12 p-2" >
+            <div class="border d-flex p-1 justify-content-between " style="background-color: #ffffff;">
+              <div class=" d-flex align-items-center"> 
+                <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  <i class="bi bi-menu-button m-2  text-dark" style="font-size: 30px;"></i>
+                <button class="btn mt-1" type="button">
+                  <span class="text-muted" style="float: left;">Trang chủ</span>
+                </button>
+                <button class="btn mt-1" type="button">
+                  <span class="text-muted" style="float: left;"></i>Đăng xuất</span>
+                </button>
               </div>
-               <div class="mt-2 d-flex col-md-12 ">
-                <div class="col-md-8 my-3">
-                    <div class="col-md-12  ">
+              <div class=" d-flex align-items-center">
+                <button class="btn " type="submit">
+                  <i class="bi bi-search text-muted" style="font-size: 20px;"></i>
+               </button>
+              </div>
+             </div>
+             <div class="d-flex align-items-center justify-content-between">
+              <h2>Thêm mới sản phẩm</h2>
+              <p class="text-primary"> Trang chủ</p>
+            </div>
+             <div class="mt-2 d-flex col-md-12 ">
+              <div class="col-md-8 my-3">
+                  <div class="col-md-12  ">
 
-                        
-                        <form action="" class="row border bg-light m-2">
-                            <div class="col-12 mb-3 border-bottom">
-                                <p class="mt-1">Thông tin sản phẩm</p>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="" class="form-label fw-bold">Tên sản phẩm (*)</label>
-                                <input type="text" class="form-control " id="">
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="" class="form-label fw-bold">Mô tả ngắn (*) </label>
-                                <input type="text" class="form-control" id="">
-                            </div>
-                            <div class=" col-12 mb-3">
-                            <div id="editor"></div></div>
-                        </form>
-                        <form action="" class="row border bg-light m-2">
+                      
+                      <form action="" class="row border bg-light m-2">
                           <div class="col-12 mb-3 border-bottom">
-                              <p class="mt-1">Dữ liệu sản phẩm</p>
+                              <p class="mt-1">Thông tin sản phẩm</p>
                           </div>
-                          
-                          <div class="col-md-12 mb-3 d-flex">
-                              <div class=" col-md-2">
-                                <p class="fw-bold">Giá bán(*)</p>
-                                <p class="fw-bold">(VNĐ)</p>
-                              </div>
-                              <div class="col-md-10">
+                          <div class="col-12 mb-3">
+                              <label for="" class="form-label fw-bold">Tên sản phẩm (*)</label>
+                              <input type="text" class="form-control " id="">
+                          </div>
+                          <div class="col-12 mb-3">
+                              <label for="" class="form-label fw-bold">Mô tả ngắn (*) </label>
                               <input type="text" class="form-control" id="">
-                            </div>
                           </div>
-                          <div class="col-md-12 mb-3 d-flex">
+                          <div class=" col-12 mb-3">
+                          <div id="editor"></div></div>
+                      </form>
+                      <form action="" class="row border bg-light m-2">
+                        <div class="col-12 mb-3 border-bottom">
+                            <p class="mt-1">Dữ liệu sản phẩm</p>
+                        </div>
+                        
+                        <div class="col-md-12 mb-3 d-flex">
                             <div class=" col-md-2">
                               <p class="fw-bold">Giá bán(*)</p>
                               <p class="fw-bold">(VNĐ)</p>
                             </div>
                             <div class="col-md-10">
-                              <select name="cars" id="cars" class="form-select">
-                                <option value="volvo">Mới</option>
-                                <option value="saab">...</option>
-                                
-                              </select>
+                            <input type="text" class="form-control" id="">
                           </div>
                         </div>
-                          
-                      </form>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                  <form action="" class="row border bg-light m-2">
-                    <div class="col-12 mb-3 border-bottom">
-                        <p class="mt-1">Loại sản Phẩn</p>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label fw-bold">Chọn Thể loại (*)</label>
-                        <select name="cars" id="cars" class="form-select">
-                          <option value="volvo">Điện Thoại</option>
-                          <option value="saab">Pc</option>
-                          <option value="mercedes">Laptop</option>
-                          <option value="audi">Ipad</option>
-                        </select>
-                    </div>
-                </form>
-                
-                  <form action="" class="row border bg-light m-2">
-                    <div class="col-12 mb-3 border-bottom">
-                        <p class="mt-1">Loại sản Phẩn</p>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <label for="" class="form-label fw-bold">Chọn Thể loại (*)</label>
-                        <div class="d-flex">
-                        <input type="text" class="form-control" id="" placeholder="Choose file">
-                        <button class="btn btn-outline-dark">browse</button>
-                        <button class="btn btn-outline-dark">Upload</button>
+                        <div class="col-md-12 mb-3 d-flex">
+                          <div class=" col-md-2">
+                            <p class="fw-bold">Giá bán(*)</p>
+                            <p class="fw-bold">(VNĐ)</p>
+                          </div>
+                          <div class="col-md-10">
+                            <select name="cars" id="cars" class="form-select">
+                              <option value="volvo">Mới</option>
+                              <option value="saab">...</option>
+                              
+                            </select>
+                        </div>
                       </div>
+                        
+                    </form>
+                  </div>
+              </div>
+              <div class="col-md-4 my-3">
+                <form action="" class="row border bg-light m-2">
+                  <div class="col-12 mb-3 border-bottom">
+                      <p class="mt-1">Loại sản Phẩn</p>
+                  </div>
+                  <div class="col-12 mb-3">
+                      <label for="" class="form-label fw-bold">Chọn Thể loại (*)</label>
+                      <select name="cars" id="cars" class="form-select">
+                        <option value="volvo">Điện Thoại</option>
+                        <option value="saab">Pc</option>
+                        <option value="mercedes">Laptop</option>
+                        <option value="audi">Ipad</option>
+                      </select>
+                  </div>
+              </form>
+              
+                <form action="" class="row border bg-light m-2">
+                  <div class="col-12 mb-3 border-bottom">
+                      <p class="mt-1">Loại sản Phẩn</p>
+                  </div>
+                  <div class="col-12 mb-3">
+                      <label for="" class="form-label fw-bold">Chọn Thể loại (*)</label>
+                      <div class="d-flex">
+                      <input type="text" class="form-control" id="" placeholder="Choose file">
+                      <button class="btn btn-outline-dark">browse</button>
+                      <button class="btn btn-outline-dark">Upload</button>
                     </div>
-                </form>
-                <div class="d-flex m-2">
-                  <input type="submit" name="submit" class=" btn btn-primary" value="Lưu" />
-                  <input type="submit" name="submit  " class="btn btn-dark" value="Hủy" />
-                </div>
-                </div>
-                
-                  
-                 
-                
-                  
-            </div>
-            </div>
-            <p class="border-top text-muted col-md-12 " style="background-color: #ffffff; ">Copyright © 2022</p>    
-          </div>
-                
+                  </div>
+              </form>
+              <div class="d-flex m-2">
+                <input type="submit" name="submit" class=" btn btn-primary" value="Lưu" />
+                <input type="submit" name="submit  " class="btn btn-dark" value="Hủy" />
+              </div>
+              </div>
         </div>
+        <div class="">
 
+          <p class="border-top text-muted col-md-12 " style="background-color: #ffffff; height: 10px;">Copyright © 2022</p>   
+        </div>
+      </div>
       </div>
     </div>
   
