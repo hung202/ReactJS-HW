@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMaxNumber(array) {
+if (!array || !array.length) return "Lỗi";
+
+let max = array[0];
+for (let index = 0; index < array.length; index++) {
+if (max < array[index]) {
+max = array[index];
+}
+}
+
+return max;
+}
+function findMinNumber(array) {
+if (!array || !array.length) return "Lỗi";
+
+let min = array[0];
+for (let index = 0; index < array.length; index++) {
+if (min > array[index]) {
+min = array[index];
+}
+}
+
+return min;
+}
+var arr1 =[6,15,9,5]
+var arr2 = [3,20]
+var q =  findMaxNumber(arr1)
+var w = findMinNumber(arr1)
+var e = findMaxNumber(arr2)
+var r = findMinNumber(arr2)
+function name() {
+    if (e>q && w >r) {
+
+        console.log("true");
+    }
+    else{
+        console.log("false");
+    }
+}
+ console.log(name());
+
+
+
+    </script>
+</body>
+</html>
