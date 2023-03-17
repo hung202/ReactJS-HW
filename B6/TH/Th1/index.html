@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>user name</th>
+                <th>mail</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+            <td>abc</td>
+            <td>xyz</td>
+            <td>abc@aaaaaa</td>
+            </tr>
+            <tr>
+                <td>abc</td>
+                <td>xyz</td>
+                <td>abc@aaaaaa</td>
+                </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        let emloyees=[]
+        var tbodyElement= document.querySelector("tbody")
+        function getEm() {
+            axios
+            .get("https://jsonplaceholder.typicode.com/users")
+            .then(function(res){
+                emloyees = res.data;
+                // console.log(emloyees);
+                render()
+            })
+        }
+         function render() {
+            var trElement =  emloyees.map(function (emloyee) {
+                return `
+                <tr>
+                <td>${emloyee.name}</td>
+                <td>${emloyee.username}</td>
+                <td>${emloyee.email}</td>
+                </tr>
+                `
+            })
+            tbodyElement.innerHTML= trElement.join("")
+         }
+         getEm()
+    </script>
+</body>
+</html>

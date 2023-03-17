@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Add todo" />
+        <button type="submit">Add</button>
+      </form>
+      
+      <table>
+        <ul></ul>
+      </table>
+      <button id="next" onclick="handleNext()">Next</button>
+      <button id="back" onclick="handleBack()">Back</button>
+    
+    
+
+    <script>
+        let todos=[]
+       
+        let page= 2
+         
+        var ulElement= document.querySelector("ul")
+        function getEm(parmas) {
+            axios
+            .get(`https://jsonplaceholder.typicode.com/todos?_limit=10&_page=${parmas.page}`)
+            .then(function(res){
+                todos = res.data;
+                console.log(todos);
+                render()
+            })
+        }
+        function handleNext() {
+            page=page+1
+            getEm( 
+            {page: page}
+         )
+           
+        }
+        function handleBack() {
+            if (page==1) return;
+            page=page-1
+            getEm( 
+            {page: page}
+         )
+                        
+            
+        }
+         function render() {
+            const trElement =  todos.map(function (emloyee) {
+                return `
+                
+                <ul><li>${emloyee.title}</li></ul>
+                `
+            })
+            ulElement.innerHTML= trElement.join("")
+         }
+         getEm( 
+            {page: page}
+         )
+        
+
+         
+    </script>
+</body>
+</html>

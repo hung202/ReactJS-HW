@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>BT2</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        
+        }
+        .content{
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        .item{
+            display: flex;
+            flex-wrap: nowrap;
+            border-bottom: 1px solid black;
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        .item:last-child{
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <h1>Menu</h1>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script>
+        let menus = {meals: []}
+        const tbodyE = document.querySelector("tbody")
+        function getEmployees(){
+            axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`).then((res)=>{
+                menus = res.data
+                console.log(menus)
+                render()
+            })
+        }
+        function render(){
+            const trElement = menus.meals.map(function(menu){
+                return `
+                <div class="item">
+                <img src="${menu.strMealThumb}" alt="" class="img">
+                <span class="content">${menu.strMeal}</span>
+                </div>
+                `
+               
+            })
+            tbodyE.innerHTML = trElement.join("")
+        }
+        getEmployees()
+    </script>
+</body>
+
+</html>
