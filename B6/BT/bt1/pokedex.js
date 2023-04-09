@@ -44,15 +44,9 @@ function updatePokemon(){
         let type = document.createElement("span");
         type.innerText = types[i]["type"]["name"].toUpperCase();
         type.classList.add("type-box");
-        type.classList.add(types[i]["type"]["name"]); //adds background color and font color
+        type.classList.add(types[i]["type"]["name"]); 
         typesDiv.append(type);
     }
 
     
 }
- 
-
-        
-                  
-                  
-        

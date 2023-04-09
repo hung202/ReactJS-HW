@@ -30,12 +30,15 @@ class Todo {
  let note2 = new Todo('sex','24/03/2023')
  let note3 = new Todo('play game','23/03/2023')
  let note4= new Todo('home work','22/03/2023')
+ let note5= new Todo('home work','22/03/2023')
 
  let notelist= new TodoList()
  notelist.addTodoList(note2)
  notelist.addTodoList(note1)
  notelist.addTodoList(note3)
  notelist.addTodoList(note4)
+ notelist.addTodoList(note5)
+
  console.log(notelist);
  
   

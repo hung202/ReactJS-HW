@@ -8,25 +8,26 @@
 </head>
 <body>
     <script>
-        function findMaxNumber(array) {
-if (!array || !array.length) return "Lỗi";
+        function findMaxNumber(numbers) {
+if (!numbers || !numbers.length) return "Lỗi";
 
-let max = array[0];
-for (let index = 0; index < array.length; index++) {
-if (max < array[index]) {
-max = array[index];
+
+let max = numbers[0];
+for (let index = 0; index < numbers.length; index++) {
+if (max < numbers[index]) {
+max = numbers[index];
 }
 }
 
 return max;
 }
-function findMinNumber(array) {
-if (!array || !array.length) return "Lỗi";
+function findMinNumber(numbers) {
+if (!numbers || !numbers.length) return "Lỗi";
 
-let min = array[0];
-for (let index = 0; index < array.length; index++) {
-if (min > array[index]) {
-min = array[index];
+let min = numbers[0];
+for (let index = 0; index < numbers.length; index++) {
+if (min > numbers[index]) {
+min = numbers[index];
 }
 }
 

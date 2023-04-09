@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+}
+
+.sidebar {
+    background-color: blue;
+    height: 100vh;
+    flex-grow: 3;
+}
+
+.content {
+    height: 100vh;
+    background-color: red;
+    flex-grow: 7;
+
+}
