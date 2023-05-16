@@ -1,23 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
+import contactReducer from '../reducers/contactSlice';
 
-import { combineReducers } from "redux";
-import storage from 'redux-persist/lib/storage';
-import { persistReducer } from 'redux-persist';
-
-import ProductSlice from '../ProductSlice';
-
-const persistConfig = {
-  key: 'root',
-  storage
-};
-
-export const allReducers = combineReducers({
-  product: ProductSlice,
-  // nếu có reducer khác thì thêm ở đây
-});
-
-const persistedReducer = persistReducer(persistConfig, allReducers);
-
-export const store = configureStore({
-  reducer: persistedReducer
+export default configureStore({
+  reducer: {
+    contacts: contactReducer,
+  },
 });
