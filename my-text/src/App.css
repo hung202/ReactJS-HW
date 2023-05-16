@@ -65,82 +65,45 @@
   top: 30%;
   padding: 20px;
 }
-/* CSS cho phần tử h1 */
-h1 {
-  font-size: 2rem;
-  margin: 1rem 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* CSS cho phần tử h2 */
-h2 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+  padding: 2rem;
 }
 
-/* CSS cho phần tử form */
 form {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 1rem;
 }
 
-/* CSS cho input và label trong form */
-label {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-input {
+input[type='text'] {
   padding: 0.5rem;
-  font-size: 1.2rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
 }
 
-/* CSS cho button trong form */
+button[type='submit'] {
+  padding: 0.5rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+}
+
 button {
-  padding: 0.5rem;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  border-radius: 0.5rem;
-  background-color: #007bff;
-  color: white;
+  padding: 0.25rem 0.5rem;
+  background-color: #f44336;
   border: none;
+  border-radius: 0.25rem;
+  color: #fff;
   cursor: pointer;
+  margin-right: 0.5rem;
+  margin-left: 20px;
 }
-
-/* CSS cho danh sách contact */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  margin-bottom: 0.5rem;
-}
-
-.contact-name {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.contact-phone {
-  font-size: 1.2rem;
-}
-
-/* CSS cho nút xóa */
-.delete-button {
-  background-color: #dc3545;
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
