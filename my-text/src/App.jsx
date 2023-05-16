@@ -1,12 +1,13 @@
 import React from 'react';
-import TodoApp  from './features/todo/index.js';
+import {ManageUser} from './features/manageApp/User/index';
 
 
 function App() {
   return (
     <div>
-      <TodoApp />
+      <ManageUser />
     </div>
   );
 }
+
 export default App;
