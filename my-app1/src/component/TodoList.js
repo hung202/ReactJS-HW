@@ -28,7 +28,9 @@ const TodoList = ({ todos, fetchTodos, updateTodo, deleteTodo }) => {
             checked={todo.completed}
             onChange={() => handleUpdate(todo)}
           />
-          <span style={{ marginLeft: "10px", padding: "10px" }}>{todo.todo}</span>
+          <span style={{ marginLeft: "10px", padding: "10px" }}>
+            {todo.todo}
+          </span>
           <button onClick={() => handleDelete(todo.id)}>Delete</button>
         </div>
       ))}

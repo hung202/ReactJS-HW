@@ -23,25 +23,9 @@ const TodoForm = ({ addTodo }) => {
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
         placeholder="Enter a todo"
-        style={{
-          padding: "0.5rem",
-          marginRight: "0.5rem",
-          borderRadius: "4px",
-          border: "1px solid #ccc",
-          outline: "none",
-        }}
+        style={{}}
       />
-      <button
-        type="submit"
-        style={{
-          padding: "0.5rem 1rem",
-          borderRadius: "4px",
-          border: "none",
-          backgroundColor: "#007bff",
-          color: "#fff",
-          cursor: "pointer",
-        }}
-      >
+      <button type="submit" style={{}}>
         Add Todo
       </button>
     </form>
