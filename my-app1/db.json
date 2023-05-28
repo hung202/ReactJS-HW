@@ -1,0 +1,42 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "todo": "Be Stronger",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "todo": "Do HomeWork"
+    },
+    {
+      "id": 3,
+      "todo": "Go Shopping"
+    },
+    {
+      "id": 4,
+      "todo": " Add tasks"
+    },
+    {
+      "id": 5,
+      "todo": "Click on tasks to Edit"
+    },
+    {
+      "id": 6,
+      "todo": "Remove tasks"
+    },
+    {
+      "id": 7,
+      "todo": "Be Death"
+    },
+    {
+      "id": 8,
+      "todo": "Sleep",
+      "completed": false
+    },
+    {
+      "todo": "new job",
+      "id": 9
+    }
+  ]
+}
